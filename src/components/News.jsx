@@ -35,7 +35,7 @@ function News() {
       {loading && <p>Loading news...</p>}
 
       {!loading && news.length === 0 && (
-        <p>WAXAN HALKAN KU SOO BANDHIGI DOONA WARARKA LA XIDHIDHA XISBIGA WADANI.</p>
+        <p>NEWS ARTICLES WILL BE PUBLISH HERE VERY SOON.</p>
       )}
 
       <div className="news-grid">
