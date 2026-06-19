@@ -51,7 +51,7 @@ To publish automatically:
 1. Push the repository to GitHub.
 2. In GitHub, open the repository settings.
 3. Go to **Pages** and select **GitHub Actions** as the source.
-4. The workflow in `.github/workflows/deploy.yml` will build and deploy the site on every push to `master`.
+4. The workflow in `.github/workflows/deploy.yml` will build and deploy the site on every push to `main`.
 
 ## Useful scripts
 - `npm run dev` — run locally
