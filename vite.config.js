@@ -1,7 +1,8 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 
-// https://vite.dev/config/
+// GitHub Pages deployment base path
 export default defineConfig({
+  base: '/WADANI/',
   plugins: [react()],
 })

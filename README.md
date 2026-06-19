@@ -1,16 +1,63 @@
-# React + Vite
+# WADANI
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+WADANI is a React + Vite web application for managing community events, news, polls, volunteer signups, and admin operations.
 
-Currently, two official plugins are available:
+## Features
+- Public-facing pages for events, news, leaders, gallery, and contact info
+- Admin dashboard for managing content
+- Volunteer and user management workflows
+- Firebase-backed authentication and data access
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Prerequisites
+- Node.js 18 or newer
+- npm
+- A Firebase project
+- A GitHub repository with GitHub Pages enabled
 
-## React Compiler
+## Local setup
+1. Clone the repository
+   ```bash
+   git clone https://github.com/maksitcous-gif/WADANI.git
+   cd WADANI
+   ```
+2. Install dependencies
+   ```bash
+   npm install
+   ```
+3. Create a `.env` file in the project root and add your Firebase configuration values:
+   ```env
+   VITE_API_KEY=your_api_key
+   VITE_AUTH_DOMAIN=your_auth_domain
+   VITE_PROJECT_ID=your_project_id
+   VITE_STORAGE_BUCKET=your_storage_bucket
+   VITE_MESSAGING_SENDER_ID=your_messaging_sender_id
+   VITE_APP_ID=your_app_id
+   VITE_APPCHECK_SITE_KEY=optional_app_check_key
+   ```
+4. Start the development server
+   ```bash
+   npm run dev
+   ```
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Build for production
+```bash
+npm run build
+```
 
-## Expanding the ESLint configuration
+## GitHub Pages deployment
+This project is configured for GitHub Pages using a Vite base path of `/WADANI/`.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+To publish automatically:
+1. Push the repository to GitHub.
+2. In GitHub, open the repository settings.
+3. Go to **Pages** and select **GitHub Actions** as the source.
+4. The workflow in `.github/workflows/deploy.yml` will build and deploy the site on every push to `master`.
+
+## Useful scripts
+- `npm run dev` — run locally
+- `npm run build` — create production output
+- `npm run preview` — preview the production build locally
+
+## Notes
+- The `.env` file is ignored by Git for security.
+- If your Firebase project uses App Check, set `VITE_APPCHECK_SITE_KEY` in your environment variables.
