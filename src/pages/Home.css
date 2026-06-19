@@ -1,0 +1,82 @@
+/* ======================================
+   HOME PAGE
+====================================== */
+
+
+.home-page{
+
+  min-height:100vh;
+  background:#f7f7f7;
+
+}
+
+
+
+main{
+
+  overflow:hidden;
+
+}
+
+
+
+
+/* ADMIN DASHBOARD LINK */
+
+.admin-link-container{
+
+  display:flex;
+
+  justify-content:center;
+
+  padding:40px 20px;
+
+  background:white;
+
+}
+
+
+
+.admin-link{
+
+  background:#fc9000;
+
+  color:white;
+
+  padding:14px 30px;
+
+  border-radius:999px;
+
+  font-weight:700;
+
+  text-decoration:none;
+
+  transition:.3s;
+
+}
+
+
+
+.admin-link:hover{
+
+  background:#fc9000;
+
+  transform:translateY(-3px);
+
+}
+
+
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+  .admin-link{
+
+    width:90%;
+
+    text-align:center;
+
+  }
+
+}

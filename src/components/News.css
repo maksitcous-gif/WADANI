@@ -1,0 +1,202 @@
+/* ================================
+   NEWS SECTION
+================================ */
+
+#news{
+  padding:80px 8%;
+  background:#f8fafc;
+}
+
+#news h2{
+  text-align:center;
+
+  font-size:2.5rem;
+  font-weight:800;
+
+  color:#1f2937;
+
+  margin-bottom:40px;
+
+  position:relative;
+}
+
+#news h2::after{
+  content:"";
+
+  display:block;
+
+  width:80px;
+  height:4px;
+
+  background:#fc9000;
+
+  margin:12px auto 0;
+
+  border-radius:999px;
+}
+
+
+/* ================================
+   NEWS GRID
+================================ */
+
+.news-grid{
+
+  display:grid;
+
+  grid-template-columns:
+  repeat(auto-fit,minmax(300px,1fr));
+
+  gap:30px;
+
+  max-width:1200px;
+
+  margin:auto;
+}
+
+
+/* ================================
+   NEWS CARD
+================================ */
+
+.news-card{
+
+  background:white;
+
+  border-radius:18px;
+
+  overflow:hidden;
+
+  box-shadow:
+  0 10px 30px rgba(0,0,0,.08);
+
+  transition:.3s ease;
+}
+
+
+.news-card:hover{
+
+  transform:translateY(-8px);
+
+  box-shadow:
+  0 20px 40px rgba(0,0,0,.15);
+}
+
+
+
+/* ================================
+   IMAGE
+================================ */
+
+.news-image{
+
+  width:100%;
+
+  height:240px;
+
+  object-fit:cover;
+}
+
+
+/* ================================
+   CONTENT
+================================ */
+
+.news-content{
+
+  padding:25px;
+}
+
+
+.news-content h3{
+
+  font-size:1.4rem;
+
+  color:#111827;
+
+  margin-bottom:12px;
+
+  font-weight:700;
+}
+
+
+.news-content p{
+
+  color:#6b7280;
+
+  line-height:1.7;
+
+  margin-bottom:15px;
+
+}
+
+
+
+/* ================================
+   DATE
+================================ */
+
+.news-date{
+
+  display:inline-block;
+
+  color:#fc9000;
+
+  font-weight:600;
+
+  font-size:.9rem;
+}
+
+
+
+/* ================================
+   LOADING / EMPTY MESSAGE
+================================ */
+
+#news > p{
+
+  text-align:center;
+
+  color:#6b7280;
+
+  font-size:1.1rem;
+
+  margin:20px 0;
+}
+
+
+
+/* ================================
+   MOBILE
+================================ */
+
+@media(max-width:768px){
+
+  #news{
+
+    padding:60px 20px;
+
+  }
+
+
+  #news h2{
+
+    font-size:2rem;
+
+  }
+
+
+  .news-grid{
+
+    grid-template-columns:1fr;
+
+  }
+
+
+  .news-image{
+
+    height:200px;
+
+  }
+
+}

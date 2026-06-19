@@ -1,0 +1,186 @@
+.volunteer-admin {
+  padding: 24px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  max-width: 1100px;
+  margin: auto;
+}
+
+.volunteer-admin h2 {
+  margin-bottom: 20px;
+  font-size: 26px;
+  font-weight: 600;
+  color: #333;
+}
+
+/* ---------------- TOP BAR ---------------- */
+
+.top-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.search-input,
+.city-filter,
+.sort-select {
+  padding: 10px 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+  min-width: 180px;
+}
+
+.search-btn,
+.export-btn {
+  padding: 10px 16px;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: 0.2s;
+}
+
+.search-btn:hover,
+.export-btn:hover {
+  background: #0056b3;
+}
+
+/* ---------------- SUCCESS MESSAGE ---------------- */
+
+.success-box {
+  background: #d4edda;
+  padding: 12px;
+  border-radius: 6px;
+  margin-bottom: 15px;
+  color: #155724;
+  border-left: 4px solid #28a745;
+  font-size: 14px;
+}
+
+/* ---------------- TABLE ---------------- */
+
+.volunteer-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.volunteer-table th,
+.volunteer-table td {
+  padding: 12px;
+  border-bottom: 1px solid #e5e5e5;
+  text-align: left;
+}
+
+.volunteer-table th {
+  background: #f8f9fa;
+  font-weight: 600;
+  color: #444;
+}
+
+.volunteer-table tr:hover {
+  background: #f5faff;
+}
+
+.volunteer-table button {
+  padding: 6px 10px;
+  margin-right: 6px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+.volunteer-table button:first-child {
+  background: #ffc107;
+  color: #333;
+}
+
+.volunteer-table button:first-child:hover {
+  background: #e0a800;
+}
+
+.volunteer-table button:last-child {
+  background: #fc9000;
+  color: white;
+}
+
+.volunteer-table button:last-child:hover {
+  background: #fc9000;
+}
+
+/* ---------------- EDIT INPUTS ---------------- */
+
+.volunteer-table input {
+  padding: 6px 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 120px;
+  font-size: 13px;
+}
+
+/* ---------------- PAGINATION ---------------- */
+
+.pagination {
+  margin-top: 20px;
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  justify-content: center;
+}
+
+.pagination button {
+  padding: 8px 14px;
+  border: none;
+  background: #007bff;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.pagination button:disabled {
+  background: #cccccc;
+  cursor: not-allowed;
+}
+
+.pagination button:hover:not(:disabled) {
+  background: #0056b3;
+}
+
+.pagination span {
+  font-size: 14px;
+  color: #444;
+}
+
+/* ---------------- NO RESULTS ---------------- */
+
+.no-results {
+  margin-top: 20px;
+  font-size: 16px;
+  color: #777;
+  text-align: center;
+}
+
+/* ---------------- RESPONSIVE ---------------- */
+
+@media (max-width: 768px) {
+  .top-bar {
+    flex-direction: column;
+  }
+
+  .volunteer-table th,
+  .volunteer-table td {
+    padding: 8px;
+  }
+
+  .volunteer-table input {
+    width: 100px;
+  }
+}

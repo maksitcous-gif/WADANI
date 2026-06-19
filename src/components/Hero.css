@@ -1,0 +1,76 @@
+.hero{
+  min-height:90vh;
+
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+
+  text-align:center;
+  padding:20px;
+
+  background:
+    linear-gradient(
+      rgba(0,0,0,.55),
+      rgba(0,0,0,.55)
+    ),
+    url('/tingey.jpg');
+
+  background-size:cover;
+  background-position:center;
+  background-repeat:no-repeat;
+
+  color:white;
+}
+
+.hero h1{
+  font-size:clamp(3rem,8vw,6rem);
+  font-weight:900;
+  letter-spacing:3px;
+
+  margin-bottom:20px;
+
+  text-shadow:
+    0 4px 15px rgba(0,0,0,.4);
+}
+
+.hero p{
+  font-size:clamp(1.1rem,3vw,1.5rem);
+  font-weight:500;
+
+  color:#f3f4f6;
+
+  margin-bottom:30px;
+
+  letter-spacing:1px;
+}
+
+.hero::after{
+  content:"";
+  width:100px;
+  height:4px;
+
+  background:#c41230;
+
+  border-radius:999px;
+
+  margin-top:15px;
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+  .hero{
+    min-height:75vh;
+    padding:20px;
+  }
+
+  .hero h1{
+    font-size:3rem;
+  }
+
+  .hero p{
+    font-size:1.1rem;
+  }
+}

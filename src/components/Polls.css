@@ -1,0 +1,186 @@
+/* ============================
+   POLL SECTION (SIDE-BY-SIDE)
+============================ */
+
+.poll-section {
+  padding: 60px 20px;
+  background: #f8fafc;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 25px; /* smaller gap */
+  flex-wrap: wrap;
+}
+
+/* ============================
+   SHARED CARD DESIGN
+============================ */
+
+.poll-card,
+.poll-results {
+  background: white;
+  padding: 25px; /* smaller padding */
+  border-radius: 16px; /* slightly smaller radius */
+  box-shadow: 0 6px 20px rgba(0,0,0,.06); /* softer shadow */
+  width: 100%;
+  max-width: 380px; /* smaller width */
+  box-sizing: border-box;
+}
+
+/* ============================
+   POLL CARD TITLE
+============================ */
+
+.poll-card h2 {
+  text-align: center;
+  color: #1f2937;
+  font-size: 1.5rem; /* smaller title */
+  margin-bottom: 25px;
+}
+
+/* ============================
+   OPTIONS
+============================ */
+
+.poll-options {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.poll-options label {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: .3s ease;
+  font-weight: 600;
+  color: #374151;
+}
+
+.poll-options label:hover {
+  border-color: #fc9000;
+  background: #fff5f6;
+  transform: translateX(4px);
+}
+
+.poll-options input {
+  width: 18px;
+  height: 18px;
+  accent-color: #fc9000;
+}
+
+/* ============================
+   SELECTED VOTE
+============================ */
+
+.selected-vote {
+  margin-top: 20px;
+  color: #6b7280;
+  text-align: center;
+}
+
+.selected-vote strong {
+  color: #fc9000;
+}
+
+/* ============================
+   SUBMIT BUTTON
+============================ */
+
+.poll-btn {
+  width: 100%;
+  margin-top: 20px;
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+  background: #006837;
+  color: white;
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: .3s ease;
+}
+
+.poll-btn:hover {
+  background: #004d29;
+  transform: translateY(-2px);
+}
+
+/* ============================
+   STATUS MESSAGE
+============================ */
+
+.poll-status {
+  margin-top: 15px;
+  text-align: center;
+  color: #006837;
+  font-weight: 600;
+}
+
+/* ============================
+   RESULTS CARD
+============================ */
+
+.poll-results h3 {
+  text-align: center;
+  margin-bottom: 12px;
+  color: #1f2937;
+  font-size: 1.3rem;
+}
+
+.poll-results ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.poll-results li {
+  padding: 10px 0;
+  font-size: 1rem;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.poll-results li:last-child {
+  border-bottom: none;
+}
+
+/* ============================
+   REFRESH NOTE
+============================ */
+
+.refresh-note {
+  text-align: center;
+  font-size: 0.85rem;
+  color: #6b7280;
+  margin-bottom: 10px;
+}
+
+/* ============================
+   HIDDEN RESULTS MESSAGE
+============================ */
+
+.poll-hidden {
+  width: 100%;
+  max-width: 380px;
+  text-align: center;
+  margin-top: 20px;
+  color: #fc9000;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+/* ============================
+   MOBILE
+============================ */
+
+@media (max-width: 768px) {
+  .poll-card,
+  .poll-results {
+    max-width: 100%;
+    padding: 20px;
+  }
+}
